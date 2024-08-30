@@ -21,13 +21,13 @@ public class ResourceController {
     }
 
     @GetMapping("/{id}")
-    public Resource getResourceById(@PathVariable Long id) {
+    public List<Resource> getResourceById(@PathVariable Long id) {
         return resourceService.getResourceById(id);
     }
 
     @PostMapping
     public Resource createResource( @RequestBody Resource resource) {
-        return resourceService.createResource( resource);
+        return resourceService.createResource(resource);
     }
 
     @PutMapping("/{id}")

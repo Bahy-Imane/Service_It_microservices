@@ -20,7 +20,7 @@ public class ProjectService {
     }
 
     public Project getProjectById(Long id) {
-        return projectRepository.findById(id).get();
+        return projectRepository.findById(id).orElseThrow();
     }
 
     public Project addProject(Project project) {
@@ -28,7 +28,7 @@ public class ProjectService {
     }
 
     public Project updateProject(Long id, Project project) {
-        Project project1 = projectRepository.findById(id).get();
+        Project project1 = projectRepository.findById(id).orElseThrow();
         project1.setProjectName(project.getProjectName());
         project1.setProjectDescription(project.getProjectDescription());
         project1.setProjectStartDate(project.getProjectStartDate());

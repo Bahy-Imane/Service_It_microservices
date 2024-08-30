@@ -1,6 +1,5 @@
 package com.tasks.manager.service;
 
-import com.tasks.manager.feignClient.Project;
 import com.tasks.manager.feignClient.ProjectClient;
 import com.tasks.manager.model.Task;
 import com.tasks.manager.repository.TaskRepository;
@@ -17,12 +16,19 @@ public class TaskService {
     @Autowired
     private ProjectClient projectClient;
 
+
     public List<Task> getAllTasks() {
         return taskRepository.findAll();
     }
 
+
+
+    public List<Task> getTaskByProjectId(Long id) {
+        return taskRepository.getTaskByProjectId(id);
+    }
+
     public Task getTaskById(Long id) {
-        return taskRepository.findById(id).get();
+        return taskRepository.findById(id).orElseThrow();
     }
 
 

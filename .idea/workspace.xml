@@ -5,12 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2091dc70-78a6-48cd-bf50-b0dded121e88" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects Manager/src/main/java/com/project/manager/service/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Projects Manager/src/main/java/com/project/manager/service/ProjectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ressources Manager/src/main/java/com/ressources/manager/controller/ResourceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ressources Manager/src/main/java/com/ressources/manager/controller/ResourceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ressources Manager/src/main/java/com/ressources/manager/feignClient/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ressources Manager/src/main/java/com/ressources/manager/feignClient/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ressources Manager/src/main/java/com/ressources/manager/feignClient/TaskClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ressources Manager/src/main/java/com/ressources/manager/feignClient/TaskClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ressources Manager/src/main/java/com/ressources/manager/repository/ResourceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ressources Manager/src/main/java/com/ressources/manager/repository/ResourceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ressources Manager/src/main/java/com/ressources/manager/service/ResourceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ressources Manager/src/main/java/com/ressources/manager/service/ResourceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tasks Manager/src/main/java/com/tasks/manager/controller/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tasks Manager/src/main/java/com/tasks/manager/controller/TaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tasks Manager/src/main/java/com/tasks/manager/repository/TaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tasks Manager/src/main/java/com/tasks/manager/repository/TaskRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tasks Manager/src/main/java/com/tasks/manager/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tasks Manager/src/main/java/com/tasks/manager/service/TaskService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,23 +24,36 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2lKIN9s6AODlZBNrMrfnXOc1oUM" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Maven.ressources-manager [clean].executor": "Run",
+    "Maven.ressources-manager [install].executor": "Run",
     "Maven.service_it_microservices [clean].executor": "Run",
     "Maven.service_it_microservices [install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.EurekaServerApplication.executor": "Run",
-    "git-widget-placeholder": "Merging main",
+    "Spring Boot.ProjectsManagerApplication.executor": "Run",
+    "Spring Boot.RessourcesManagerApplication.executor": "Run",
+    "Spring Boot.TasksManagerApplication.executor": "Run",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/user/Desktop/Service_It_microservices",
@@ -53,6 +70,15 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\user\Desktop\Service_It_microservices" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
   </component>
   <component name="RunManager" selected="Spring Boot.EurekaServerApplication">
     <configuration default="true" type="JetRunConfigurationType">
@@ -89,13 +115,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TasksManagerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <configuration name="TasksManagerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="tasks-manager" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.tasks.manager.TasksManagerApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tasks.manager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.TasksManagerApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -113,7 +150,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1724922298416</updated>
-      <workItem from="1724922299616" duration="371000" />
+      <workItem from="1724922299616" duration="10075000" />
+      <workItem from="1725004427907" duration="3774000" />
     </task>
     <servers />
   </component>

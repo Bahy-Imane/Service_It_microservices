@@ -1,12 +1,10 @@
 package com.ressources.manager.service;
 
-import com.ressources.manager.feignClient.Task;
 import com.ressources.manager.feignClient.TaskClient;
 import com.ressources.manager.model.Resource;
 import com.ressources.manager.repository.ResourceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -23,10 +21,10 @@ public class ResourceService {
         return resourceRepository.findAll();
     }
 
-    public Resource getResourceById(Long id) {
-        return resourceRepository.findById(id).get();
-    }
 
+    public List<Resource> getResourceById(Long id) {
+        return resourceRepository.getResourcesByTaskId(id);
+    }
     public Resource createResource(Resource resource) {
         if (taskClient.getTaskById(resource.getTaskId()) != null) {
             return resourceRepository.save(resource);
@@ -42,6 +40,7 @@ public class ResourceService {
         resource1.setResourceProvider(resource.getResourceProvider());
         return resourceRepository.save(resource1);
     }
+
 
     public void deleteResource(Long id) {
         resourceRepository.deleteById(id);

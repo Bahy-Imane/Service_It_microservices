@@ -20,8 +20,13 @@ public class TaskController {
         return taskService.getAllTasks();
     }
 
+    @GetMapping("/byproject/{id}")
+    public List<Task> getTaskByProjectId(@PathVariable Long id) {
+        return taskService.getTaskByProjectId(id);
+    }
+
     @GetMapping("/{id}")
-    public Task getTask(@PathVariable Long id) {
+    public Task getTaskById(@PathVariable Long id) {
         return taskService.getTaskById(id);
     }
 
